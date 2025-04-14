@@ -1,3 +1,6 @@
+# Bug Tracker App
+<p>This is a project meant to demonstrate full stack development skills as well as concepts such as testing (Unit, Component, Integration, E2E, etc.), containerization, etc.
+
 ## Backend:  Node.js + Express + TypeScript
 Directory: `server`
 Uses:
@@ -23,6 +26,8 @@ Uses:
   `npm install prisma --save-dev`<br>
   `npm install @prisma/client`<br>
   `npx prisma init`
+  - Synced database with prisma schema (`/server/prisma/schema.prisma`)
+  `npx prisma migrate dev --name init`
 
 ## Frontend:  React + TypeScript + Vite
 Directory: `client`
