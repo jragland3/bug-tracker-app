@@ -1,6 +1,16 @@
 # Bug Tracker App
 <p>This is a project meant to demonstrate full stack development skills as well as concepts such as testing (Unit, Component, Integration, E2E, etc.), containerization, etc.
 
+## Todo:
+- Create API routes (like POST /bugs, GET /bugs)
+- Build the React bug submission form
+- Write tests for your new routes (using Jest + Supertest)
+- Dockerize the app (optional later)
+- Set up GitHub Actions for CI (for tests + linting)
+- Build core features: auth, bug creation, status, assignment
+- Add PostgreSQL database integration
+- Deploy using Render, Railway, or Vercel
+
 ## Backend:  Node.js + Express + TypeScript
 Directory: `server`
 Uses:
@@ -9,8 +19,18 @@ Uses:
 - TypeScript
 - Jest + Supertest for testing
 
-### Start server
+Todo:
+- Add More Routes: Implement more routes in controllers and add more test cases for them.
+- Improve Test Coverage: Add more complex tests (like POST requests and handling data).
+- Add Mocking: Use Jest mocking to simulate database interactions for your tests.
+
+### Starting server
+#### Dev mode
 - Run using `npm run dev`
+
+### Production (or for deployment like Docker)
+`npm run build`    # Compiles TypeScript → JavaScript into /dist
+`npm start`        # Runs the compiled server
 
 ### Log
 - Initialized NPM project: `npm init -y`
@@ -26,8 +46,17 @@ Uses:
   `npm install prisma --save-dev`<br>
   `npm install @prisma/client`<br>
   `npx prisma init`
+  - Updated schema.prisma with `model Bug`
+  - Configured .env with correct file path
   - Synced database with prisma schema (`/server/prisma/schema.prisma`)
-  `npx prisma migrate dev --name init`
+    - Generates the DB and Prisma Client
+    - Creates dev.db
+    - Generates the Prisma client in `node_modules`
+    - Apply the schema:<br>
+        `npx prisma migrate dev --name init`
+    - Generated Prisma Client:<br>
+        `npx prisma generate`
+    - Created `src/lib/prisma.ts`
 
 ## Frontend:  React + TypeScript + Vite
 Directory: `client`
