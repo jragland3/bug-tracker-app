@@ -2,7 +2,8 @@
 <p>This is a project meant to demonstrate full stack development skills as well as concepts such as testing (Unit, Component, Integration, E2E, etc.), containerization, etc.
 
 ## Todo:
-- Create API routes (like POST /bugs, GET /bugs)
+- Create API routes
+  - PUT /bugs/:id to update a bug
 - Build the React bug submission form
 - Write tests for your new routes (using Jest + Supertest)
 - Dockerize the app (optional later)
@@ -28,9 +29,13 @@ Todo:
 #### Dev mode
 - Run using `npm run dev`
 
-### Production (or for deployment like Docker)
+#### Production (or for deployment like Docker)
 `npm run build`    # Compiles TypeScript → JavaScript into /dist
 `npm start`        # Runs the compiled server
+
+### Resetting the database
+- `npx prisma generate`
+- `npx prisma migrate reset --force`
 
 ### Log
 - Initialized NPM project: `npm init -y`
