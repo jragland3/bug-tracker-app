@@ -57,6 +57,7 @@ Todo:
     - Generated Prisma Client:<br>
         `npx prisma generate`
     - Created `src/lib/prisma.ts`
+- Set up basic API routes: GET, POST, DELETE
 
 ## Frontend:  React + TypeScript + Vite
 Directory: `client`
@@ -69,9 +70,9 @@ Uses:
 ### Log
 - Created Vite project:
 `npm create vite@latest . -- --template react-ts`
-- Install devDepnendencies:
+- Installed devDepnendencies:
 `npm install -D typescript ts-node nodemon`
-- Install testing tools (Vitest + React Testing Library)
+- Installed testing tools (Vitest + React Testing Library)
 `npm install -D vitest @testing-library/react @testing-library/jest-dom`
 <br>
 <br>
