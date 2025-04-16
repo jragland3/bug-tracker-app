@@ -58,6 +58,9 @@ Todo:
         `npx prisma generate`
     - Created `src/lib/prisma.ts`
 - Set up basic API routes: GET, POST, DELETE
+  - Note: With the current setup, route functions should not return anything or an error will occur
+- Updated `/server/src/lib/prisma.ts` so that PrismaClient is imported from '/server/src/generated/prisma'
+
 
 ## Frontend:  React + TypeScript + Vite
 Directory: `client`
