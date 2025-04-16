@@ -65,6 +65,7 @@ Todo:
 - Set up basic API routes: GET, POST, DELETE
   - Note: With the current setup, route functions should not return anything or an error will occur
 - Updated `/server/src/lib/prisma.ts` so that PrismaClient is imported from '/server/src/generated/prisma'
+- Added Testing files for Jest and Supertest
 
 
 ## Frontend:  React + TypeScript + Vite
